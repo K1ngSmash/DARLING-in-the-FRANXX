@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,25 +17,22 @@
     <header>
       <div class="header">
         <div class="logo-place">
-          <a href="">
-            <span class="red">DARLING</span>
-            <span>in the</span>
-            <span class="blue">FRANXX</span></a
-          >
+          <a href="#"><img src="img/logo.png" alt="" width="150" /></a>
         </div>
         <div class="nav-place">
           <a class="nav-place__home" href="">Home</a>
           <a class="nav-place__characters" href="#characters">Characters</a>
-          <a class="nav-place__watch" href="">Watch</a>
-          <a class="nav-place__mind" href="">My Mind</a>
-          <a href=""><button class="login-button">Login</button></a>
+          <a class="nav-place__watch" href="#watch">Watch</a>
+          <a class="nav-place__mind" href="#mind">My Mind</a>
+          <form action="login.html">
+            <button class="login-button">Login</button>
+          </form>
         </div>
       </div>
     </header>
 
     <!--Контент Часть-->
     <main>
-      <div class="bg-images"></div>
       <div class="main">
         <!--Место начала основной контент части-->
         <div class="welcome-place">
@@ -45,10 +42,9 @@
           <div class="welcome-video">
             <video
               muted
-              type="video/mp4"
               autoplay="autoplay"
               loop="loop"
-              src="video/DARLING in the FRANXX.mp4"
+              src="video/DARLINGintheFRANXX.mp4"
             ></video>
           </div>
         </div>
@@ -124,35 +120,93 @@
         </div>
 
         <!--Место для начала просмотра аниме-->
-        <div class="video-place">
-          <div class="title-place">
-            <h4></h4>
+        <section id="watch">
+          <div class="video-block">
+            <div class="video-place">
+              <div class="title-place">
+                <div class="title-place__logo">
+                  <img src="img/logo-bg.jpg" alt="" />
+                </div>
+                <h4>Любимый во Франксе 1 серия</h4>
+              </div>
+              <div class="player-place">
+                <video
+                  controls
+                  src="https://r250109.kujo-jotaro.com/darling-in-the-franxx/1.1080.4d6de81a2a8c66b8.mp4?hash1=d4651692a52092c4d6d98cc10a8115f0&hash2=eda45bc2107d86159ade964a911b5dfa"
+                ></video>
+              </div>
+              <div class="button-place">
+                <button class="controls_back">0 серия</button>
+                <button class="controls__all">Список всех серий</button>
+                <button class="controls__next">2 серия</button>
+              </div>
+            </div>
           </div>
-          <div class="player-place">
-            <video src=""></video>
-          </div>
-          <div class="button-place">
-            <button></button>
-            <button></button>
-            <button></button>
-          </div>
-        </div>
-
+        </section>
         <!--Блок с моим мнением о данном аниме-->
-        <div class="mind-place">
-          <div class="mind-title">
-            <h4></h4>
+        <section id="mind">
+          <div class="mind-place">
+            <div class="name-place">
+              <div class="avatar">
+                <img src="img/avatar.gif" alt="" />
+                <h4>K1ngSmash</h4>
+              </div>
+              <div class="share-place">
+                <a
+                  class="hover-links"
+                  href="https://www.instagram.com/the.k1ngsmash"
+                  target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="hover-links"
+                  href="https://github.com/K1ngSmash"
+                  target="_blank"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="hover-links"
+                  href="https://t.me/K1ngSmash"
+                  target="_blank"
+                  ><i class="fa fa-telegram" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div class="text-place">
+              <h3>«Теперь ты будешь моим Любимым!»</h3>
+              <p>
+                На самом деле, касаясь ситуации вокруг данного аниме, хотелось
+                бы сказать следующее: хоть и многие называют это аниме
+                'противоречивым', 'плагиатом на евангелион', 'сборной солянкой',
+                всё же, я с этими утверждениями не совсем согласен. Конечно,
+                идея 'детей в роботах', сражающихся с захватчиками уже не нова,
+                и взята из Евангелиона и других аниме. 02 и Аска, красные цвета,
+                психическое слияние с машинами- это присуще данным аниме. Но
+                утверждать что это плагиат и провал- глупо, хоть и
+                небезосновательно. <br /><br />
+                У этого аниме есть своя изюминка. <br /><br />Кто бы мог
+                подумать, жанр меха и жанр романтика в одном аниме и не
+                конфликтуют? Едва ли это похоже на чушь. Хоть для меня при
+                просмотре сюжет был не так и интересен после просмотров похожих
+                работ, но отношения героев притягивали меня. Я хотел узнать, что
+                же будет дальше? Куда приведут отношения Хиро и 02, других ребят
+                из отряда. Я был уверен, что концовка будет трагична, эта мысль
+                сидела у меня в голове почти до развязки. Но концовка, оставила
+                'сладкое' послевкусие, надежду на то, что не всё так безнадёжно
+                в этом мире, разрушенном людьми, и вновь же ими созданном.
+                <br />Аниме несёт в себе простые, понятные философские мысли:<br /><br />
+                'главная сила человека- это любовь', 'как мало нужно человеку
+                для счастья'. Будь то выращенная картошка или же любимый человек
+                рядом с тобой, главное - найти то, ради чего ты должен жить,
+                жить несмотря на любые трудности. <br /><br />P.S Хотелось бы
+                сказать в конце: не смотрите на весь хейт, доверьтесь себе и
+                своему сердцу. Только тогда данное аниме оставит у вас именно
+                то, 'сладкое', приятное чувство от просмотра.
+              </p>
+            </div>
           </div>
-          <div class="mind-text">
-            <p></p>
-            <img src="" alt="" />
-          </div>
-          <div class="share-place">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-          </div>
-        </div>
+        </section>
       </div>
     </main>
 
@@ -162,23 +216,28 @@
         <!--Все информация обо мне :D-->
         <div class="aboutme-place">
           <div class="title-inf">
-            <h4></h4>
+            <h4>Закир Невский</h4>
           </div>
           <div class="mylinks-place">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="mailto:zakir.nevsky@gmail.com">Почта</a>
+            <a href="https://vk.com/smasher003" target="_blank">ВКонтакте</a>
           </div>
         </div>
 
         <!--Информация для тех кто хочет познакомиться с аниме поближе-->
         <div class="anime-place">
           <div class="anime-title">
-            <h4></h4>
+            <h4>Любимый во Франксе</h4>
           </div>
           <div class="anime-links">
-            <a href=""></a>
-            <a href=""></a>
+            <a href="https://darling-in-the-franxx.fandom.com" target="_blank"
+              >Fandom</a
+            >
+            <a
+              href="https://ru.wikipedia.org/wiki/Darling_in_the_Franxx"
+              target="_blank"
+              >Wikipedia</a
+            >
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap");
+
+/*Основная стилизация*/
 * {
   box-sizing: border-box;
   list-style: none;
   font-family: "Roboto", sans-serif;
-}
-a {
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -19,29 +19,13 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 /*Шапка сайта*/
-header {
-  background-color: #ffffff;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 2;
-}
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-}
-.logo-place img {
-  width: 200px;
 }
 .header a {
   margin-right: 15px;
@@ -51,9 +35,8 @@ header {
   font-size: 16px;
   text-align: center;
 }
-.logo-place a {
-  margin: 0;
-}
+
+/*Стилизация кнопок навигации*/
 .nav-place {
   display: flex;
   justify-content: center;
@@ -61,13 +44,7 @@ header {
 }
 .nav-place__home,
 .nav-place__watch,
-.nav-place__mind {
-  width: 100px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.nav-place__mind,
 .nav-place__characters {
   width: 120px;
   height: 30px;
@@ -75,6 +52,8 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+/*Простая анимация кнопок*/
 .nav-place__home::after {
   content: "";
   display: block;
@@ -126,6 +105,8 @@ header {
   width: 24px;
   margin-left: 8px;
 }
+
+/*Стилизация кнопки для регистрации*/
 .login-button {
   margin: 0 30px;
   width: 200px;
@@ -155,13 +136,8 @@ header {
   width: 24px;
   margin-left: 8px;
 }
-.welcome-video video {
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 200px auto;
-  width: 1000px;
-}
+
+/*Привественное видео в виде опенинга*/
 .welcome-title {
   display: flex;
   justify-content: center;
@@ -169,13 +145,15 @@ header {
   font-weight: 600;
   font-size: 32px;
 }
-.characters-place img {
-  width: 300px;
+.welcome-video video {
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 200px auto;
+  width: 1000px;
 }
-.characters-place h4 {
-  font-size: 40px;
-}
+
+/*Блок для zero two*/
 .zerotwo-place {
   display: flex;
   justify-content: center;
@@ -201,6 +179,8 @@ header {
   font-weight: 400;
   font-size: 16px;
 }
+
+/*Блок для hiro*/
 .hiro-place {
   display: flex;
   width: 1000px;
@@ -226,9 +206,19 @@ header {
   font-weight: 400;
   font-size: 16px;
 }
+
+/*Общие стили для этих карточек*/
+.characters-place img {
+  width: 300px;
+  border-radius: 20px;
+}
+.characters-place h4 {
+  font-size: 40px;
+}
 .characters_cards-place {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .characters_cards-place img {
   width: 400px;
@@ -239,6 +229,7 @@ header {
   font-size: 30px;
 }
 
+/*Карточки для второстепенных персонажей*/
 .ikuno-card,
 .dctr-card,
 .ichigo-card {
@@ -250,6 +241,15 @@ header {
   border-radius: 20px;
   margin-right: 30px;
 }
+.ikuno-card p,
+.dctr-card p,
+.ichigo-card p {
+  width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+/*Стили для икуно*/
 .ikuno-card {
   transform: translateX(120%);
   opacity: 0;
@@ -259,6 +259,8 @@ header {
   transform: translateX(0%);
   opacity: 1;
 }
+
+/*Стили для Франкса*/
 .dctr-card {
   transform: translateX(120%);
   opacity: 0;
@@ -268,6 +270,8 @@ header {
   transform: translateX(0%);
   opacity: 1;
 }
+
+/*Стили для Ичиго*/
 .ichigo-card {
   transform: translateX(-120%);
   opacity: 0;
@@ -277,147 +281,47 @@ header {
   transform: translateX(0%);
   opacity: 1;
 }
-.ikuno-card p,
-.dctr-card p,
-.ichigo-card p {
-  width: 350px;
-  display: flex;
-  align-items: center;
-}
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400&display=swap");
-* {
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-}
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-html {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+/*Место стилей для просмотра аниме*/
+.video-place {
+  background: url(../img/allbg.png);
+  background-repeat: no-repeat;
 }
-
-/*Шапка сайта*/
-header {
-  background-color: #ffffff;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 2;
-}
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-}
-.header {
+.title-place {
+  width: 1000px;
+  height: 75px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 0 auto 20px auto;
+  padding: 1%;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-.logo-place img {
-  width: 200px;
-}
-.header a {
-  margin-right: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  color: black;
-  font-size: 16px;
-  text-align: center;
-}
-.logo-place a {
-  margin: 0;
-}
-.nav-place {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-place__home,
-.nav-place__watch,
-.nav-place__mind {
+.title-place__logo img {
   width: 100px;
-  height: 30px;
+  height: 100px;
+  border-radius: 50%;
+}
+.player-place video {
+  width: 800px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.nav-place__characters {
-  width: 120px;
-  height: 30px;
+
+/*Стилизация кнопок*/
+.button-place {
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin: 20px auto 80px auto;
 }
-.nav-place__home::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 24px;
-  overflow: hidden;
-  background-image: url(../img/home.png);
-  transition: width 200ms, margin-left 200ms;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.nav-place__characters::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 24px;
-  overflow: hidden;
-  background-image: url(../img/witch.png);
-  transition: width 200ms, margin-left 200ms;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.nav-place__watch::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 24px;
-  overflow: hidden;
-  background-image: url(../img/play.png);
-  transition: width 200ms, margin-left 200ms;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.nav-place__mind::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 24px;
-  overflow: hidden;
-  background-image: url(../img/happy.png);
-  transition: width 200ms, margin-left 200ms;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.nav-place__home:is(:hover, :focus)::after,
-.nav-place__characters:is(:hover, :focus)::after,
-.nav-place__watch:is(:hover, :focus)::after,
-.nav-place__mind:is(:hover, :focus)::after {
-  width: 24px;
-  margin-left: 8px;
-}
-.login-button {
+.button-place button {
   margin: 0 30px;
   width: 200px;
-  height: 30px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,147 +332,241 @@ header {
   color: white;
   cursor: pointer;
 }
-.login-button::after {
+
+/*Анимация для этих кнопок*/
+.controls_back::before {
   content: "";
   display: block;
   width: 0px;
   height: 24px;
   overflow: hidden;
-  background-image: url(../img/account.png);
+  background-image: url(../img/arrow-left.png);
   transition: width 200ms, margin-left 200ms;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.login-button:is(:hover, :focus)::after {
+.controls__all::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(../img/menu.png);
+  transition: width 200ms, margin-left 200ms;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.controls__next::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(../img/arrow-right.png);
+  transition: width 200ms, margin-left 200ms;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.button-place button:is(:hover, :focus)::after {
   width: 24px;
   margin-left: 8px;
 }
-.welcome-video video {
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 200px auto;
-  width: 1000px;
-}
-.welcome-title {
-  display: flex;
-  justify-content: center;
-  margin: 80px auto;
-  font-weight: 600;
-  font-size: 32px;
-}
-.characters-place img {
-  width: 300px;
-  border-radius: 20px;
-}
-.characters-place h4 {
-  font-size: 40px;
-}
-.zerotwo-place {
-  display: flex;
-  justify-content: center;
-  margin: 30px 20px 30px 0;
-  width: 1000px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  float: right;
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-  z-index: 2;
-}
-.zerotwo-place._active {
-  transform: translateX(0%);
-  opacity: 1;
+.controls_back:is(:hover, :focus)::before {
+  width: 24px;
+  margin-right: 8px;
 }
 
-.zero-two_text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  padding: 1%;
-  font-weight: 400;
-  font-size: 16px;
-}
-.hiro-place {
-  display: flex;
-  width: 1000px;
+/*Стили для блока с моим мнением*/
+.mind-place {
+  width: 1400px;
   border-radius: 20px;
-  flex-direction: row-reverse;
-  justify-content: center;
-  margin: 30px 0 30px 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: translateX(-120%);
-  opacity: 0;
-  transition: all 0.8s ease 0.4s;
-  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 1%;
+  margin: 0 auto;
 }
-.hiro-place._active {
-  transform: translateX(0%);
-  opacity: 1;
+.text-place {
+  font-size: 18px;
+  font-weight: 500;
 }
-.hiro-text {
+
+/*Отдельные стили для блока с моей информацией*/
+.name-place {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 80px;
   margin-right: 10px;
-  padding: 1%;
-  font-weight: 400;
-  font-size: 16px;
 }
-.characters_cards-place {
+
+/*Анимации для кнопок*/
+.hover-links {
+  font-size: 2em;
+  display: inline-block;
+  cursor: pointer;
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+  line-height: 84px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 300ms;
+}
+.hover-links::after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px black;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+.hover-links:hover {
+  background-color: black;
+  color: #fff;
+}
+.hover-links:hover::after {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/*Футер станицы*/
+.footer {
   display: flex;
-  justify-content: center;
-}
-.characters_cards-place img {
-  width: 400px;
+  justify-content: space-around;
   border-radius: 20px;
-  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: 30px auto 30px auto;
+  width: 1600px;
+  padding: 1%;
 }
-.characters_cards-place h4 {
-  font-size: 30px;
-}
-.ikuno-card,
-.dctr-card,
-.ichigo-card {
-  width: 400px;
+.aboutme-place,
+.anime-place {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  margin-right: 30px;
 }
-.ikuno-card {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
+.mylinks-place,
+.anime-links {
+  display: flex;
+  flex-direction: column;
 }
-.ikuno-card._active {
-  transform: translateX(0%);
-  opacity: 1;
+
+/*Прочие стили*/
+.footer h4 {
+  font-size: 24px;
 }
-.dctr-card {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-.dctr-card._active {
-  transform: translateX(0%);
-  opacity: 1;
-}
-.ichigo-card {
-  transform: translateX(-120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-.ichigo-card._active {
-  transform: translateX(0%);
-  opacity: 1;
-}
-.ikuno-card p,
-.dctr-card p,
-.ichigo-card p {
-  width: 350px;
+.footer a {
+  color: black;
+  width: 150px;
+  height: 50px;
   display: flex;
   align-items: center;
+  font-weight: 600;
+}
+.footer a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(../img/link.png);
+  transition: width 200ms, margin-left 200ms;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.footer a:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/*Логин панель*/
+.bg {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login__container {
+  width: 450px;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.login__container a {
+  color: black;
+}
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+.login__container img {
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 30px 0;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*Стили для кнопок*/
+.btn-form {
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background: black;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.btn-form::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(../img/check-free.png);
+  transition: width 200ms, margin-left 200ms;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.btn-form:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+.btn-back {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
