@@ -570,3 +570,10 @@ input[type="password"] {
   left: 0px;
   bottom: 0px;
 }
+.ikuno-card p,
+.dctr-card p,
+.ichigo-card p {
+  width: 350px;
+  display: flex;
+  align-items: center;
+}
